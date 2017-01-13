@@ -9,6 +9,7 @@ export class App {
         this.defaultCharacterName =["alex","ono","saito"];
         this.defaultCharacterMessageColor =["green","red","blue"];
 
+        this.currentCharacter = 0;
         this.messages = [];
         this.character = [];
         for ( var i=0; i<this.defaultCharacterNum; i++) {
@@ -21,6 +22,13 @@ export class App {
         var message = new Message();
         message.setContents(contents);
         this.messages.push(message);
+    }
+
+    changeCurrentCharacter() {
+        this.currentCharacter++;
+        if ( this.currentCharacter > this.character.length ) {
+            this.currentCharacter = 0;
+        }
     }
 }
 
