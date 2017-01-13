@@ -12,8 +12,8 @@ export class App {
         this.messages = [];
         this.character = [];
         for ( var i=0; i<this.defaultCharacterNum; i++) {
-           var caharcter = new Character(i+1,this.defaultCharacterName[i],this.defaultMessageCharacterColor[i]);
-           this.character.push(charecter);
+           var character = new Character(i+1,this.defaultCharacterName[i],this.defaultCharacterMessageColor[i]);
+           this.character.push(character);
         }
     }
 
