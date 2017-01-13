@@ -1,0 +1,18 @@
+<template>
+
+    <div class="main-container">
+        <div class="vertical-spacing"></div>
+        <div class="chat-container">
+            <div class="message-container" repeat.for="message of messages">
+                <span class="message-text">${message.contents}</span>
+                <br/><br/>
+            </div>
+        </div>
+        <div class="vertical-spacing"></div>
+        <div class="message-form-container">
+            <input class="message-input-field" value.bind="contents" />
+            <button class="message-send-button" click.trigger="addMessage(contents)">Send</button>
+        </div>
+    </div>
+
+</template>
