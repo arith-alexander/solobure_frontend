@@ -15,7 +15,7 @@ export class App {
         }
         var message = new Message();
         message.setContents(input_text);
-        this.messages.push(message);
+        this.messages.unshift(message);
         this.input_text = "";
     }
 
