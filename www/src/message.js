@@ -9,8 +9,8 @@ export class Message {
         this.contents = contents;
     }
 
-    setCharacer(charecter) {
-        this.charcter = charecter;
+    setCharacer(character) {
+        this.character = character;
     }
 }
 
