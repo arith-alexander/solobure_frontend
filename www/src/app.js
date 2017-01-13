@@ -1,6 +1,6 @@
 
 import {Message} from './message';
-import {Charecter} from './charecter';
+import {Character} from './character';
 
 export class App {
 

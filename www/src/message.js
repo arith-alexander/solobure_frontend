@@ -5,10 +5,12 @@ export class Message {
         this.character = null;
     }
 
-    setContents(contents,charecter) {
+    setContents(contents) {
         this.contents = contents;
-        this.charcter = charecter;
     }
 
+    setCharacer(charecter) {
+        this.charcter = charecter;
+    }
 }
 

@@ -6,10 +6,12 @@ export class Character {
         this.messageColor = messageColor;
     }
 
-    updateInfo(name,messageColor) {
+    setName(name) {
         this.name = name;
-        this.messageColor = messageColor;
     }
 
+    setMessageColor(messageColor) {
+        this.messageColor = messageColor;
+    }
 }
 
