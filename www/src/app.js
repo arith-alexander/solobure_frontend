@@ -7,7 +7,7 @@ export class App {
     constructor() {
         this.defaultCharacterNum = 3;
         this.defaultCharacterName =["alex","ono","saito"];
-        this.defaultCharacterMessageColor =["green","red","bule"];
+        this.defaultCharacterMessageColor =["green","red","blue"];
 
         this.messages = [];
         this.character = [];
@@ -22,10 +22,5 @@ export class App {
         message.setContents(contents);
         this.messages.push(message);
     }
-
-    updateCharacter(id,name,messageColor) {
-        this.character[id].updateInfo(name,messageColor);
-    }
-
 }
 
