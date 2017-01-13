@@ -9,7 +9,7 @@ export class Message {
         this.contents = contents;
     }
 
-    setCharacer(character) {
+    setCharacter(character) {
         this.character = character;
     }
 }

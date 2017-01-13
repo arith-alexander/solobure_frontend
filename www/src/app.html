@@ -3,13 +3,17 @@
     <div class="main-container">
         <div class="chat-container">
             <div class="message-container" repeat.for="message of messages">
-                <div class="message-text">${message.contents}</div>
+                <div>${message.character.name}</div>
+                <div css="background-color: ${message.character.messageColor};" class="message-text">${message.contents}</div>
             </div>
         </div>
         <div class="vertical-spacing"></div>
         <div class="message-form-container">
             <input class="message-input-field" value.bind="input_text" />
-            <button class="message-send-button" click.trigger="addMessage(input_text)">Send</button>
+            <button class="message-send-button" click.trigger="addMessage(input_text, currentCharacter)">Send</button>
+            <select class="character-select">
+                <option repeat.for="character of characters" value.bind="character.id" click.trigger="changeCurrentCharacter(character.id)">${character.name}</option>
+            </select>
         </div>
     </div>
 
