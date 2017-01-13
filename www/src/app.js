@@ -9,8 +9,9 @@ export class App {
         this.defaultCharacterName =["alex","ono","saito"];
         this.defaultCharacterMessageColor =["green","red","blue"];
 
-        this.currentCharacter = 0;
+        this.input_text = "";
         this.messages = [];
+        this.currentCharacter = 0;
         this.character = [];
         for ( var i=0; i<this.defaultCharacterNum; i++) {
            var character = new Character(i+1,this.defaultCharacterName[i],this.defaultCharacterMessageColor[i]);
@@ -18,10 +19,14 @@ export class App {
         }
     }
 
-    addMessage(contents) {
+    addMessage(input_text) {
+        if(!input_text) {
+            return;
+        }
         var message = new Message();
-        message.setContents(contents);
+        message.setContents(input_text);
         this.messages.push(message);
+        this.input_text = "";
     }
 
     changeCurrentCharacter() {

@@ -4,15 +4,21 @@ html, body { height: 100%; width: 100%; margin: 0; }
     width:80%;
     margin: 0 auto;
     height: 100%;
+    font-size:2vw;
 }
 
 .chat-container {
-    border:1px solid black;
+    border:1px solid green;
     height:70%;
+    overflow:auto;
+
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+    background-color: #e5ffe7;
 }
 
 .message-form-container {
-    border:1px solid black;
     height:10%;
 }
 
@@ -20,23 +26,41 @@ html, body { height: 100%; width: 100%; margin: 0; }
     height:5%;
 }
 
+.message-input-field, .message-send-button {
+    border:1px solid green;
+    background-color:#e5ffe7;
+    color: green;
+    font-size:2vw;
+    padding:0.5vw;
+
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+}
+
 .message-input-field {
-    margin-left:4%;
-    margin-top:3%;
     width:70%;
+    float:left;
 }
 
 .message-send-button {
     width:20%;
+    float:right;
 }
 
 .message-container {
     margin-top: 2%;
     margin-left: 2%;
+    margin-right: 2%;
 }
 
 .message-text{
     background-color: green;
     color: white;
     padding:1%;
+    display: inline-block;
+
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
 }
