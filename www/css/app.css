@@ -1,0 +1,42 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+
+.main-container {
+    width:80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.chat-container {
+    border:1px solid black;
+    height:70%;
+}
+
+.message-form-container {
+    border:1px solid black;
+    height:10%;
+}
+
+.vertical-spacing {
+    height:5%;
+}
+
+.message-input-field {
+    margin-left:4%;
+    margin-top:3%;
+    width:70%;
+}
+
+.message-send-button {
+    width:20%;
+}
+
+.message-container {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.message-text{
+    background-color: green;
+    color: white;
+    padding:1%;
+}
