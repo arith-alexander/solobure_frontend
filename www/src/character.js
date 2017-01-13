@@ -6,8 +6,7 @@ export class Character {
         this.messageColor = messageColor;
     }
 
-    updateInfo(id,name,messageColor)) {
-        this.id = id;
+    updateInfo(name,messageColor) {
         this.name = name;
         this.messageColor = messageColor;
     }
